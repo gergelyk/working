@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name = 'working',
-    version = '0.1.0',
+    version = '0.1.1',
     description = 'Makes spawning processes enjoyable.',
     author = 'Grzegorz Krason',
     author_email = 'grzegorz.krason@gmail.com',
@@ -11,6 +11,6 @@ setup(
     packages = find_packages(),
     keywords = 'process multiprocessing spawn join'.split(),
     classifiers = [],
-    install_requires = [],
+    install_requires = [tblib, six],
 )
 
